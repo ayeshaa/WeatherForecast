@@ -26,7 +26,7 @@ namespace WeatherForecast.API.WeatherforecastRequest.V1.Repositories.CityData
             var city = this.collection.AsQueryable().OrderByDescending(c => c.Id).ToList();
             return city;
         }
-        public City Find(ObjectId id)
+        public City Find(ObjectId? id)
         {
             var city = this.collection.AsQueryable().Where(c => c.Id == id).First();
             return city;

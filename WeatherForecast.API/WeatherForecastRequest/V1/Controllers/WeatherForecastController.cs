@@ -12,9 +12,6 @@ namespace WeatherForecast.API.Controllers
         private readonly ILogger<WeatherForecastController> _logger;
         private readonly IWeatherForecastService weatherService;
 
-        public WeatherForecastController()
-        {
-        }
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger, IWeatherForecastService weatherService)
         {

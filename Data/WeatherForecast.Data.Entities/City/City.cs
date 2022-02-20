@@ -1,45 +1,41 @@
-﻿using Newtonsoft.Json;
+﻿using MongoDB.Bson;
 
-namespace WeatherForecast.API.WeatherforecastRequest.V1.Modal
+namespace WeatherForecast.Data.Entities.City
 {
     public class City
     {
-        [JsonProperty("id")]
-        public string Id
+        public ObjectId Id
         {
             get; set;
         }
-        [JsonProperty("name")]
         public string Name
         {
             get; set;
         }
-        [JsonProperty("coord")]
-        public Coordinates Coordinates
+        public float Latitude
         {
             get; set;
         }
-        [JsonProperty("country")]
+        public float Longitude
+        {
+            get; set;
+        }
         public string Country
         {
             get; set;
         }
-        [JsonProperty("population")]
         public int Population
         {
             get; set;
         }
-        [JsonProperty("timezone")]
         public int TimeZone
         {
             get; set;
         }
-        [JsonProperty("sunrise")]
         public int Sunrise
         {
             get; set;
         }
-        [JsonProperty("sunset")]
         public int Sunset
         {
             get; set;

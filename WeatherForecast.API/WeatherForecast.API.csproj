@@ -24,7 +24,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\WeatherForecast.Data.Entities\WeatherForecast.Data.Entities.csproj" />
+    <ProjectReference Include="..\Data\WeatherForecast.Data.Entities\WeatherForecast.Data.Entities.csproj" />
   </ItemGroup>
 
 </Project>

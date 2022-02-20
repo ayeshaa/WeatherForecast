@@ -45,7 +45,7 @@ namespace WeatherForecast.API.WeatherforecastRequest.V1.Services.WeatherForecast
                         {
                             Country = city.Country,
                             Name = city.Name,
-                            Id = city.Id,
+                            Id = city.Id.ToString(),
                             Population = city.Population,
                             Sunrise = city.Sunrise,
                             Sunset = city.Sunset,
