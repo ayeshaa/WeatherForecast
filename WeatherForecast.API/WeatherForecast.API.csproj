@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ViewModal\**" />
+    <Compile Remove="Weatherforecast\**" />
+    <Content Remove="ViewModal\**" />
+    <Content Remove="Weatherforecast\**" />
+    <EmbeddedResource Remove="ViewModal\**" />
+    <EmbeddedResource Remove="Weatherforecast\**" />
+    <None Remove="ViewModal\**" />
+    <None Remove="Weatherforecast\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
+    <PackageReference Include="MongoDB.Driver" Version="2.14.1" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="RestSharp" Version="106.12.0" />
+    <PackageReference Include="Serilog" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\WeatherForecast.Data.Entities\WeatherForecast.Data.Entities.csproj" />
+  </ItemGroup>
+
+</Project>
